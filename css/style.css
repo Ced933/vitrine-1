@@ -96,6 +96,12 @@ html{
     height: 100dvh;
 display: flex;
 width: 80%;
+@media only screen and (max-width: 800px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    
+    }
 /* margin: 0 auto; */
 }
 
@@ -104,7 +110,14 @@ width: 80%;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        /* border: 1px solid blue; */
+height: auto;
+        padding: 10px;
+    }
 }
+
 .content-box{
     width: 70%;
 }
@@ -113,13 +126,25 @@ width: 80%;
     line-height: 60px;
     margin: 0;
     margin-bottom: 30px;
+    @media only screen and (max-width: 800px) {
+        font-size: 35px;
+        line-height: 35px;
+        /* border: 1px solid red; */
+    }
 }
 .div-img-header{
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position:relative
+    position:relative;
+    @media only screen and (max-width: 800px) {
+        width: 300px;
+        height: 300px; 
+        
+        border-radius:50%;
+        /* border: 1px solid red; */
+    }
 }
 
 .img-header{
@@ -127,6 +152,12 @@ width: 80%;
     height: 80%;
     object-fit: cover;
     z-index: 3;
+    @media only screen and (max-width: 800px) {
+         width: 100%;
+        height: 100%; 
+
+        border-radius: 50%;
+    }
 }
 .square{
     position: absolute;
@@ -136,6 +167,14 @@ width: 80%;
     height: 80%;
     border: 1px solid black;
     z-index: 1;
+    @media only screen and (max-width: 800px) {
+       border-radius: 50%;
+       left: -20px;
+       /* z-index: 10; */
+       width: 100%;
+       height: 100%;
+       top: -20px;
+        }
 }
 .button-work{
     text-decoration: none;
@@ -186,6 +225,9 @@ object-fit: cover;
     width: 45%;
     margin: 30px 0;
     /* margin-left: 100px; */
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        }
 
 }
 
@@ -195,6 +237,9 @@ object-fit: cover;
 }
 .div-img-about{
     width: 50%;
+    @media only screen and (max-width: 800px) {
+    display: none;
+    }
 }
 .about-h2{
     font-size: 40px;
@@ -212,11 +257,18 @@ display: flex;
 margin-top: 30px;
 border: 2px solid #000;
 border-radius: 20px;
+@media only screen and (max-width: 800px) {
+    flex-direction: column;    
+}
 }
 .first-part-contact{
     width: 40%;
     /* border: 1px solid yellow; */
     height: 600px;
+    @media only screen and (max-width: 800px) {
+        width: 100%;  
+        height: auto;
+    }
 }
 .content-contact{
     /* border: 1px solid black; */
@@ -229,17 +281,26 @@ border-radius: 20px;
 justify-content: center;
 align-items: center;
 border-radius: 20px 0 0 0;
+@media only screen and (max-width: 800px) {
+    /* height: 100%;     */
 }
+    }
+
+
 .content-contact-box{
 width: 70%;
 /* border: 1px solid red; */
 
-/* align-items: center; */
+@media only screen and (max-width: 800px) {
+  padding: 20px 0;
+}
 
 }
 .div-img-contact{
     /* border: 1px solid black; */
 height: 50%;   
+@media only screen and (max-width: 800px) {
+display: none;    }
 }
 .img-contact{
     width: 100%;
@@ -249,7 +310,12 @@ border-radius: 0 0 0 20px;
 }
 .h3-contact{
     color: white;
+    @media only screen and (max-width: 800px) {
+        margin: 0;   
     }
+        }
+    
+    
         .describe-h3{
         color: #C1C1C1;
         }
@@ -269,6 +335,10 @@ border-radius: 0 0 0 20px;
     justify-content: center;
     align-items: center;
     width: 60%;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+        padding-bottom: 40px;
+    }
 
 }
 .form{
@@ -335,6 +405,10 @@ border-radius: 0 0 0 20px;
     align-items: center;
     /* border: 1px solid orange; */
     margin: 50px 0 70px 0 ;
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
+      gap: 25px;
+    }
 }
 .logo-footer{
     color: #F3F3F3;
@@ -349,6 +423,9 @@ border-radius: 0 0 0 20px;
 }
 .resume-footer{
     width: 40%;
+    @media only screen and (max-width: 800px) {
+       width: 100%;
+      }
 }
 .resume-footer p{
     color: #F3F3F3;
@@ -359,10 +436,18 @@ border-radius: 0 0 0 20px;
     padding: 30px 0;
     border-top: 1px solid #F3F3F3;
 }
+.link-menu-foot{
+    width: 100%;
+}
 .ul-footer{
     margin: 0;
     padding: 0;
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+       }
+
 }
+
 .ul-footer li{
     list-style: none;
 }
