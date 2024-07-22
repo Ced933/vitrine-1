@@ -1,5 +1,8 @@
 const rights:any = document.querySelector("#reserved");
 
+
+
+
 function right(){
     const date = new Date();
     let currentYear:string = date.toISOString().slice(0,4);
@@ -52,7 +55,7 @@ btnNav.forEach( (element:any)  => {
         // console.log(btnfind[0])
         if(btnfind){
             btnfind[0].classList.remove('active-link');
-
+            ulMenu.classList.remove('ul-open');
         }
 
         element.classList.add('active-link')
@@ -61,6 +64,12 @@ btnNav.forEach( (element:any)  => {
     })
 });
 
+// menu 
+const btnMenu:any = document.querySelector("#menu-responsive");
+const ulMenu:any = document.querySelector("#ul-menu")
+btnMenu.addEventListener('click',()=>{
+    ulMenu.classList.toggle('ul-open')
+})
 // form 
 
 const form:any = document.querySelector('#form')

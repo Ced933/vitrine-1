@@ -39,10 +39,17 @@ btnNav.forEach((element) => {
         // console.log(btnfind[0])
         if (btnfind) {
             btnfind[0].classList.remove('active-link');
+            ulMenu.classList.remove('ul-open');
         }
         element.classList.add('active-link');
         // console.log(e.srcElement.attributes.class)
     });
+});
+// menu 
+const btnMenu = document.querySelector("#menu-responsive");
+const ulMenu = document.querySelector("#ul-menu");
+btnMenu.addEventListener('click', () => {
+    ulMenu.classList.toggle('ul-open');
 });
 // form 
 const form = document.querySelector('#form');
