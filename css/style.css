@@ -159,6 +159,11 @@ height: auto;
 
 .content-box{
     width: 70%;
+    /* border: 1px solid red; */
+    @media only screen and (max-width: 800px) {
+        width: 100%;
+    }
+
 }
 .h2-header{
     font-size: 55px;
@@ -180,6 +185,14 @@ height: auto;
     @media only screen and (max-width: 800px) {
         width: 300px;
         height: 300px; 
+        
+        border-radius:50%;
+        /* border: 1px solid red; */
+    }
+
+    @media only screen and (max-width: 425px) {
+        width: 150px;
+        height: 150px; 
         
         border-radius:50%;
         /* border: 1px solid red; */

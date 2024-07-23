@@ -39,6 +39,7 @@ btnNav.forEach((element) => {
         // console.log(btnfind[0])
         if (btnfind) {
             btnfind[0].classList.remove('active-link');
+            // version mobile 
             ulMenu.classList.remove('ul-open');
         }
         element.classList.add('active-link');
