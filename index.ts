@@ -13,12 +13,22 @@ window.addEventListener('load', right);
 
 
 
-function sizeWidth () {
-    let width = window.innerWidth;
-    // console.log(width);
-}
+// function sizeWidth () {
+   
+//     return width
+// }
 
-window.addEventListener('resize', sizeWidth)
+// window.addEventListener('resize', ()=>{
+//     let width = window.innerWidth;
+//   console.log(width)
+
+//     if(width < 450){
+//         console.log('ok')
+//         nav.classList.add("nav-active")
+//     }else{
+//         nav.classList.remove("nav-active")
+//     }
+// })
 
 // if(window.scrollY >200){
 //     console.log('okok')
@@ -28,13 +38,19 @@ const nav:any = document.querySelector('#nav')
     
 // }
 
+// let sizeWidth:number = window.innerWidth;
+
+// console.log()
 
 window.addEventListener('scroll', ()=>{
     let height = window.scrollY;
     // console.log(height);
-   
+    let width = window.innerWidth;
+    
     if(height > 10){
-        nav.classList.add("nav-active")
+        
+            nav.classList.add("nav-active")
+        
     }else{
         nav.classList.remove("nav-active")
     }
@@ -152,4 +168,10 @@ console.log(user)
 
 form.reset();
 
+})
+
+const closeBtn:any = document.querySelector('#responsive-close');
+closeBtn.addEventListener('click', ()=>{
+    ulMenu.classList.remove("ul-open")
+// alert('ok')
 })
