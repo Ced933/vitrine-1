@@ -6,9 +6,7 @@ body{
     background-color: #FEFDFA;
     
     }
-section{
-    margin: 50px 0;
-}
+
 #responsive-close{
     display: none;
     @media only screen and (max-width: 800px) {
@@ -315,6 +313,7 @@ object-fit: cover;
 .contact{
     width: 80%;
     padding-top: 50px;
+    margin-bottom: 50px;
 }
 .box-contact{
 display: flex;
@@ -346,7 +345,7 @@ justify-content: center;
 align-items: center;
 border-radius: 20px 0 0 0;
 @media only screen and (max-width: 800px) {
-    /* height: 100%;     */
+    border-radius: 20px 20px 0 0;
 }
     }
 
@@ -451,7 +450,7 @@ border-radius: 0 0 0 20px;
 }
 /* ----------- footer  */
 .footer{
-    background-color: #373737;
+    background-color: #000;
     display: flex;
     justify-content: center;    
 }
